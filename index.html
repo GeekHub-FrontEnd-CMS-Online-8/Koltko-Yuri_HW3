@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3 Формы</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+  <header>
+      <h1>Урок "Формы": теги и их атрибуты.</h1>
+      <h2>Расскажите немного о себе...</h2>
+  </header>
+   <form action="" method="get">
+      <fieldset id="about_me">
+          <legend><span>Коротко о себе</span></legend>
+       Имя: <input type="text" size="35" name="firstname">
+       <br>
+       Фамилия: <input type="text" size="35" name="lastname">
+       <br>
+       Пол: <input type="radio" name="gender" value="male"> мужской
+       <input type="radio" name="gender" value="male"> женский
+       <br>
+       Возраст: <input id="age" size="2" type="text" value="" name="age"> лет
+       </fieldset>
+       <fieldset id="in_detail">
+           <legend><span>Подробнее о себе</span></legend>
+           <input type="radio" name="gender2" value="young_man">Молодой человек
+           <br>
+           <input type="radio" name="gender2" value="girl">Девушка
+           <br>
+           <section class="more__detail">
+           <input type="text" name="date"> Дата рождения
+           <br>
+           <input type="text" name="family"> Семейное положение
+           <br>
+           <input type="text" name="status"> Социальный статус
+           <br>
+           <input type="text" name="location"> Местожительство
+           </section>
+           <p>
+           <span>Что вы обычно делаете на выходных:</span>
+           </p>
+           <input type="checkbox" name="sleep">Сплю
+           <br>
+           <input type="checkbox" name="walking">Гуляю
+           <br>
+           <input type="checkbox" name="fishing">Хожу на рыбалку
+           <br>
+           <input type="checkbox" name="sport">Занимаюсь спортом
+           <br>
+           <input type="checkbox" name="look">Смотрю фильмы
+           <p>
+           <span>Образование:</span>
+           </p>
+           <select name="select">
+        <option value="s1">начальное</option>
+        <option value="s2">среднее (общее)</option>
+        <option value="s3">среднее (полное)</option>
+        <option value="s4">среднее (профессиональное)</option>
+        <option value="s5">бакалавр</option>
+        <option value="s6">магистратура</option>
+           </select>
+           <p>
+           <span>Сколько книг прочитали за лето:</span>
+           </p>
+           <input type="radio" name="read1"> 0-1
+           <br>
+           <input type="radio" name="read1"> 0-5
+           <br>
+           <input type="radio" name="read1"> 0-10
+           <br>
+           <input type="radio" name="read1"> 0-20+
+           <label class="com">
+           <span>Коментарии:</span>
+           </label>
+           <textarea name="comment" cols="50" rows="10"></textarea>
+           <p><select name="" size="3">
+               <option value="com1">Первая позиция</option>
+               <option selected value="com1">Вторая позиция</option>
+               <option value="com1">Третья позиция</option>
+           </select></p>
+       </fieldset>
+       <fieldset id="finally"><legend><span>И в заключение</span></legend>
+          <input type="text" size="40" placeholder="Это поле было введено для вас">
+          
+          <label class="finally__email"><span>Email:</span></label>
+          
+          <input type="email" size="40">
+          <label class="subscribe__fin" ><span>Хотите подписатся?</span></label>
+           <label class="cat__1"><span>Выберите категории</span></label>
+          <br>
+           <input type="checkbox" name="cat1">Esquire
+           <br>
+           <input type="checkbox" name="cat2">Maxim
+           <br>
+           <input type="checkbox" name="cat3">Men’s Health
+           <br>
+           <input type="checkbox" name="cat4">Playboy
+           <p><span>На сколько сложная задача</span></p>
+           <input type="radio" name="task" value="ta1" checked>Легкотня
+           <br>
+           <input type="radio" name="task" value="ta2">Сложно
+           <br>
+           <input type="radio" name="task" value="ta3">Очень сложно
+           <br>
+           <input type="radio" name="task" value="ta4">Как два пальца
+       </fieldset>
+       <p><input type="submit" value="Отправить"></p>
+   </form>
+    
+</body>
+</html>
